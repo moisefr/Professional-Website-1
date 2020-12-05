@@ -5,6 +5,7 @@ body{
     width: inherit;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 
@@ -16,41 +17,92 @@ img {
 }
 
 /*Style Navigation Bar*/
-
-
-/*Style Jimbotron*/
-
-/*Limit the width of the icons section*/
-
-/*Style Icons section using bootsrap grid system*/
-
-/*Style contact button using bootsrap buttons*/
-
-/*Style the footer*/
-
-/*Use media queries to change icons size for smaller devices*/
-/**/
-
-
 .navbar {
     margin-left: -10px;
     padding: 10px;
 }
 
-
-
+/*Style Jimbotron*/
 .jumbotron {
     background-color: transparent;
     margin: 200px;
     text-align: center;
+    color: black;
 }
-.jumbotron h1,p{
-    color:black;
+.jumbotron p{
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    font-size: 30px
+}
+/*Limit the width of the icons section*/
+
+/*Style Icons section using bootsrap grid system*/
+.icons {
+    align-content: center;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-top: -200px;
+    margin-bottom: 50px;
+}
+.icons p{
+    text-align: center;
+    font-size: 15px;
+}
+.icons div{
+    text-align: center;
+    max-width: 1000px;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+.icons img{
+    width:  175px;
+    box-shadow: 30px;
 }
 
-.btn-group {
-    align-content: center;
-    width: 800px;
+/*Style contact button using bootsrap buttons*/
+.contact {
     margin-left: 800px;
-    margin-top: -300px;
+
 }
+.contact a{
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 2px 1px dimgray;
+    opacity: 0.6;
+    background-color: deepskyblue
+}
+.contact a:hover{
+    opacity: 1.0;
+}
+/*Style the footer*/
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #9C898B;
+  color: white;
+  text-align: center;
+  height: 50px
+}
+/*Use media queries to change icons size for smaller devices*/
+/**/
+
+
+/*Add styling for devices under 480px*/
+@media (max-width: 768px){
+    .bodyimage{
+        height: 70px;   
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
